@@ -30,8 +30,13 @@ a {
     color: #000000;
 }
 
-/* Header and Navigation */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
+/* Header and Navigation */
 .site-name {
     margin: 64px 0;
     text-align: center;
@@ -42,8 +47,21 @@ a {
     color: #037bc0;
 }
 
-.main-nav {
+.main-nav-container {
     border-top: 1px solid #e1e1e1;
+}
+
+.main-nav {
     padding: 24px 0;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.hero {
+    height: 550px;
+    background-image: url(../img/principal.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
