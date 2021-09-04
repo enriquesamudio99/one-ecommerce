@@ -25,6 +25,19 @@ img {
 h1,h2,h3 {
     line-height: 1.2;
     font-weight: 700;
+    margin: 0 0 4.8rem 0;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3.2rem;
+}
+
+h3 {
+    font-size: 2.4rem;
 }
 
 a {
@@ -41,9 +54,8 @@ a {
 
 /* Header and Navigation */
 .site-name {
-    margin: 5.6rem 0;
+    margin-top: 4.8rem;
     text-align: center;
-    font-size: 4rem;
 } 
 
 .site-name span {
@@ -60,7 +72,7 @@ a {
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
 }
 
 @media (min-width: 768px) {
@@ -72,7 +84,7 @@ a {
 }
 
 .hero {
-    height: 550px;
+    height: 55rem;
     background-image: url(../img/principal.jpg);
     background-repeat: no-repeat;
     background-position: center center;
@@ -83,13 +95,12 @@ a {
 .categories .categories-title {
     text-align: center;
     margin: 6.4rem 0;
-    font-size: 3.2rem;
 }
 
 .categories-list {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: 2.4rem;
 }
 
 @media (min-width: 576px) {
@@ -126,4 +137,43 @@ a {
 .categorie a:hover {
     background-color: #037bc0;
     color: #ffffff;
+}
+
+/* About Us */
+.about-us {
+    margin: 5rem 0;
+    background-image: linear-gradient(to right, #037bc0 50%,#037bc0 100%), url(../img/nosotros.jpg);
+    padding: 10rem 0;
+}
+
+@media (min-width: 768px) {
+    .about-us {
+        background-image: linear-gradient(to right, rgba(0,0,0,.5) 50%, #037bc0 50%,#037bc0 100%), url(../img/nosotros.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%, 120rem;
+        background-position: left center;
+    }
+}
+
+.about-us-grid {
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .about-us-grid {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+.about-us-text {
+    color: #ffffff;
+}
+
+@media (min-width: 768px) {
+    .about-us-text {
+        flex-basis: 50%;
+        padding-left: 4rem;
+    }
 }
