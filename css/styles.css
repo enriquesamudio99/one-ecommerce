@@ -52,6 +52,11 @@ a {
     padding: 0 1.6rem;
 } 
 
+/* Utilities */
+.text-center {
+    text-align: center;
+}
+
 /* Header and Navigation */
 .site-name {
     margin-top: 4.8rem;
@@ -59,7 +64,7 @@ a {
 } 
 
 .site-name span {
-    color: #037bc0;
+    color: #00456d;
 }
 
 .main-nav-container {
@@ -93,7 +98,6 @@ a {
 
 /* Categories */
 .categories .categories-title {
-    text-align: center;
     margin: 6.4rem 0;
 }
 
@@ -135,20 +139,20 @@ a {
 }
 
 .categorie a:hover {
-    background-color: #037bc0;
+    background-color: #00456d;
     color: #ffffff;
 }
 
 /* About Us */
 .about-us {
     margin: 5rem 0;
-    background-image: linear-gradient(to right, #037bc0 50%,#037bc0 100%), url(../img/nosotros.jpg);
+    background-image: linear-gradient(to right, #00456d 50%,#00456d 100%), url(../img/nosotros.jpg);
     padding: 10rem 0;
 }
 
 @media (min-width: 768px) {
     .about-us {
-        background-image: linear-gradient(to right, rgba(0,0,0,.5) 50%, #037bc0 50%,#037bc0 100%), url(../img/nosotros.jpg);
+        background-image: linear-gradient(to right, rgba(0,0,0,.5) 50%, #00456d 50%,#00456d 100%), url(../img/nosotros.jpg);
         background-repeat: no-repeat;
         background-size: 100%, 120rem;
         background-position: left center;
@@ -177,3 +181,60 @@ a {
         padding-left: 4rem;
     }
 }
+
+/* Products Listing */
+.products-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.4rem;
+}
+
+@media (min-width: 576px) {
+    .products-list {
+        grid-template-columns: repeat(2 ,1fr);
+    }
+}
+
+@media (min-width: 992px) {
+    .products-list {
+        grid-template-columns: repeat(3 ,1fr);
+    }
+}
+
+.product {
+    /* background-color: #037bc0; */
+    background-color: #00456d;
+}
+
+.product img {
+    width: 100%;
+}
+
+.product-text {
+    text-align: center;
+    padding: 3.2rem;
+    color: #fff;
+}
+
+.product-text h3 {
+    margin: 0;
+}
+
+.product-text p {
+    margin: 1.6rem 0;
+}
+
+.product-text .price {
+    font-size: 2.8rem;
+    font-weight: 900;
+}
+
+.product-text a {
+    display: inline-block;
+    color: #fff;
+    font-weight: 700;
+    background-color: #6d8f00;
+    width: 100%;
+    padding: 1.6rem 0;
+}
+
