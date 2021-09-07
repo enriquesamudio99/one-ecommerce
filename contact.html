@@ -6,13 +6,141 @@
     <meta name="description" content="Ecommerce">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Furniture Store | Contact</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <header>
+        <h1 class="site-name"><span>Furniture</span> Store</h1>
+    </header>
 
-    <h1>Contact</h1>
+    <div class="main-nav-container">
+        <nav class="main-nav container">
+            <a href="index.html">Home</a>
+            <a href="about-us.html">About Us</a>
+            <a href="store.html">Store</a>
+            <a href="blog.html">Blog</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+
+    <main class="main-content container">
+        <h2 class="products-title text-center">Contact</h2>
+
+        <form action="" class="form">
+            <fieldset>
+                <legend>Your Data</legend>
+                
+                <div class="field">
+                    <label for="name">Name:</label>
+                    <input type="text" placeholder="Your Name" id="name">
+                </div>
     
-    <a href="index.html">Back to home page</a>
+                <div class="field">
+                    <label for="subject">Subject:</label>
+                    <input type="text" placeholder="Your Subject" id="subject">
+                </div>
+
+                <div class="field">
+                    <label for="email">Email:</label>
+                    <input type="email" placeholder="Your Email" id="email">
+                </div>
+
+                <div class="field">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" placeholder="Your Phone" id="phone">
+                </div>
+
+                <div class="field">
+                    <label for="message">Message:</label>
+                    <textarea id="message"></textarea>
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Country</legend>
+
+                <div class="field">
+                    <label for="country">Country:</label>
+                    <select id="country">
+                        <option value="" selected disabled>-- Select --</option>
+                        <option value="py">Paraguay</option>
+                        <option value="usa">USA</option>
+                        <option value="ger">Germany</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Extra Information</legend>
+
+                <div class="field">
+                    <label class="label-inline-block" for="customer">Customer</label>
+                    <input type="radio" id="customer" name="type">
+                </div>
+                <div class="field">
+                    <label class="label-inline-block" for="supplier">Supplier</label>
+                    <input type="radio" id="supplier" name="type">
+                </div>
+                <div class="field">
+                    <label for="category">Interest Category</label>
+                    <input list="categories" name="categories">
+                    <datalist id="categories">
+                        <option value="Kitchen" />
+                        <option value="Exterior" />
+                        <option value="Interior" />
+                        <option value="Bedrooms" />
+                        <option value="Office" />
+                        <option value="Television" />
+                    </datalist>
+                </div>
+            </fieldset>
+
+            <input class="btn" type="submit" value="Submit Form">
+
+        </form>
+    </main>
     
+    <footer class="site-footer">
+        <div class="site-footer-grid container">
+            <div>
+                <h3>Categories</h3>
+    
+                <nav class="footer-menu">
+                    <a href="#">Kitchen</a>
+                    <a href="#">Office</a>
+                    <a href="#">Garden</a>
+                    <a href="#">Garage</a>
+                    <a href="#">Bedrooms</a>
+                </nav>
+            </div>
+    
+            <div>
+                <h3>About Us</h3>
+    
+                <nav class="footer-menu">
+                    <a href="#">Our History</a>
+                    <a href="#">Mission, Vision & Values</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </nav>
+            </div>
+    
+            <div>
+                <h3>Support</h3>
+    
+                <nav class="footer-menu">
+                    <a href="#">Frequently Asked Questions</a>
+                    <a href="#">Online Help</a>
+                    <a href="#">Confidence and Security</a>
+                </nav>
+            </div>
+        </div>
+
+        <p class="copy">Furniture Store 2021. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>

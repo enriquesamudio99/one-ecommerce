@@ -64,6 +64,9 @@ a {
     padding: 1rem;
     text-transform: uppercase;
     text-align: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
     transition: background-color .3s ease-in-out;
 }
 
@@ -459,4 +462,62 @@ a {
     width: 40rem;
     height: 40rem;
     object-fit: cover;
+}
+
+/* Form */
+.form {
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+.form fieldset {
+    border: 1px solid #000000;
+    margin-bottom: 2.4rem;
+}
+
+.form legend {
+    background-color: #00456d;
+    color: #ffffff;
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 1.2rem;
+    margin-bottom: 4rem;
+}
+
+.field {
+    margin-bottom: 2.4rem;
+}
+
+.field label {
+    margin-bottom: 1rem;
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .field {
+        display: flex;
+    }
+    
+    .field label {
+        margin-bottom: 0;
+        display: inline-block;
+        flex-basis: 10rem;
+    }
+}
+
+.field .label-inline-block {
+    margin-right: 1.6rem;
+    display: inline;
+}
+
+.field input:not([type="radio"]),
+.field textarea,
+.field select {
+    width: 100%;
+    flex: 1;
+    outline: none;
+    border: 1px solid #e1e1e1;
+    padding: 1rem;
 }
