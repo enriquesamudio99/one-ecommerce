@@ -425,3 +425,38 @@ a {
     max-width: 60rem;
     margin: 0 auto;
 }
+
+/* Gallery */
+
+.gallery {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.4rem;
+}
+
+@media (min-width: 576px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 992px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.gallery li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 40rem;
+    height: 40rem;
+    object-fit: cover;
+}
