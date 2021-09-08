@@ -372,6 +372,10 @@ a {
     gap: 2.4rem;
 }
 
+.about-us-content img {
+    width: 100%;
+}
+
 @media (min-width: 768px) {
     .about-us-content {
         grid-template-columns: 1fr 2fr;
@@ -401,6 +405,10 @@ a {
 
 .post {
     padding-bottom: 4rem;
+}
+
+.post img {
+    width: 100%;
 }
 
 .post:not(:last-child) {
